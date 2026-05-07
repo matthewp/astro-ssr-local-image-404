@@ -1,0 +1,11 @@
+---
+export const prerender = false;
+import { Image } from 'astro:assets';
+import testImage from '../assets/test.png';
+---
+<html>
+<body>
+  <h1>SSR page with local image</h1>
+  <Image src={testImage} alt="test" />
+</body>
+</html>
